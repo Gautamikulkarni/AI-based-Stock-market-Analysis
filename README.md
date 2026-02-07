@@ -1,4 +1,4 @@
-# 📈 Mathematical & AI-Based Stock Market Analysis
+# Mathematical & AI-Based Stock Market Analysis
 
 ## 📌 Project Overview
 This project performs a comprehensive mathematical and statistical analysis of
@@ -12,7 +12,7 @@ interpretable forecasting models for short-term stock price behavior.
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 Perform a comprehensive mathematical analysis of one year of historical daily
 stock-market data and apply:
 - Linear algebra operations
@@ -23,15 +23,7 @@ stock-market data and apply:
 to extract insights and build forecasting models.
 ---
 
-## 🧠 Key Concepts & Techniques Used
-
-### 1️⃣ Data Preprocessing
-- Daily OHLCV data collected using **Yahoo Finance (yfinance)**
-- Combined dataset with **30 numerical features**
-- Missing values handled and data standardized for analysis
----
-
-### 2️⃣ Linear Algebraic Analysis
+### 1. Linear Algebraic Analysis
 - Matrix formulation of the stock dataset
 - Covariance and correlation matrix computation
 - Eigenvalue–eigenvector analysis
@@ -44,7 +36,7 @@ strong shared market-wide movements among large-cap tech stocks.
 
 ---
 
-### 3️⃣ Dimensionality Reduction (PCA & SVD)
+### 2. Dimensionality Reduction (PCA & SVD)
 - Principal Component Analysis (PCA)
 - Scree plot and explained variance analysis
 - Interpretation of principal component loadings
@@ -55,7 +47,7 @@ while subsequent components capture **company-specific behavior**.
 
 ---
 
-### 4️⃣ Feature Engineering & Feature Selection
+### 3. Feature Engineering & Feature Selection
 Derived features:
 - Daily returns
 - Rolling volatility
@@ -75,7 +67,7 @@ power, while volume-based features show relatively lower influence.
 
 ---
 
-### 5️⃣ Time-Series Forecasting Models
+### 4. Time-Series Forecasting Models
 Applied and compared:
 - **ARIMA** – univariate forecasting
 - **SARIMA** – seasonality-aware forecasting
@@ -87,43 +79,26 @@ dependencies and spillover effects**.
 
 ---
 
-### 6️⃣ Multivariate Statistical Inference
+### 5. Multivariate Statistical Inference
 - Cross-correlation analysis between stock pairs
 - VAR impulse response analysis
 - Residual correlation analysis
 
-📌 **Observation:**  
-Large-cap technology stocks exhibit significant correlation, confirming strong
-sectoral coupling rather than independent movement.
----
-
-## 📊 Dataset Information
-- **Source:** Yahoo Finance
-- **Period:** 2024 – 2025
-- **Frequency:** Daily trading data
-- **Records:** ~252 trading days
-- **Features:** Open, High, Low, Close, Adjusted Close, Volume (for 5 stocks)
-
-📌 *Adjusted Close is used for return-based analysis as it accounts for corporate
-actions such as splits and dividends.*
----
-
-## 🧪 Results & Observations
+## 📌 Results & Observations
 - Market data is **highly correlated across tech stocks**
 - PCA reveals **low intrinsic dimensionality**
 - Feature-selection methods consistently highlight **price-based indicators**
 - ARIMA/SARIMA provide stable short-term forecasts
 - VAR confirms **inter-stock influence**, especially among Apple, Microsoft,
   and Google
+- Large-cap technology stocks exhibit significant correlation, confirming strong
+sectoral coupling rather than independent movement.
 ---
 
-## ✅ Conclusions
+## 📌 Conclusions
 - Linear algebra techniques effectively reveal latent market structure
 - Dimensionality reduction simplifies complex financial datasets without
   significant information loss
 - Feature selection improves interpretability and model robustness
 - Multivariate models provide deeper insights than isolated univariate forecasting
-  
-This study demonstrates how **mathematics and AI together** can enhance
-financial data understanding beyond simple prediction.
 --- 
